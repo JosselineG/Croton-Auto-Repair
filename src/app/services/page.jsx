@@ -3,7 +3,7 @@
 import React from 'react'
 import Image from 'next/image'
 import AImg from '@/assets/TowImg2.jpg'
-import BImg from '@/assets/CarImg.jpg'
+import BImg from '@/assets/CarImg.JPG'
 import CImg from '@/assets/image3.jpg'
 import { motion } from "framer-motion"
 import './Services.css'
