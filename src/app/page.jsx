@@ -54,11 +54,12 @@ const Home = () => {
           <video autoPlay muted loop >
             <source src="/CrotonAutoRepair1.mp4" type="video/mp4" />
           </video>
+          
         </div>
 
         <div className='copyright'>
-          <CopyrightIcon/> 2023 Croton Auto Repair. Made By <br></br>
-          <a target="_blank" href='https://www.josselineguardado.com'>JG</a></div>
+         <CopyrightIcon className='copyRight-Icon'/><h1> 2023 Croton Auto Repair. Made By </h1>
+          <a target="_blank" href='https://www.josselineguardado.com'><h1>JG</h1></a></div>
       </section>
     </div>
   )

@@ -53,10 +53,15 @@ html {
 }
 
 
+
 @media (prefers-reduced-motion: no-preference) {
   .Logo {
     animation: logo-spin 3s 1 ease;
 
+  }
+
+  .dropDown-Logo{
+    animation: logo-spin 3s 1 ease;
   }
 }
 
@@ -77,12 +82,13 @@ html {
 
   .navBar {
     height: 14vw;
-
+   
   }
 
-  .Logo {
-    margin-top: 0;
-    width: 18%;
+
+  .dropDown-Logo {
+    top: 0;
+    width: 14vw;
   }
 
   .full-width-display {
@@ -90,6 +96,7 @@ html {
   }
 
   .dropDownBar {
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -104,6 +111,7 @@ html {
 
     width: 100%;
     font-size: 5vw;
+    top: 0;
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
   }
@@ -119,6 +127,7 @@ html {
 
   .navLogo {
     width: 100%;
+    height: auto;
   }
 
 }
