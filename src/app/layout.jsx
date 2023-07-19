@@ -14,19 +14,16 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang="en">
-      <head>
-        <link rel="ic" href="/Logo2.1.3.png" />
-      </head>
-      
-      <body>
-        <Navbar />
 
-        {children}
+            <body>
+              <Navbar />
 
-      </body>
+              {children}
 
-    </html>
-  )
+            </body>
+
+          </html>
+          )
 }
 
-export default RootLayout;
+          export default RootLayout;
