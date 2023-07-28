@@ -2,8 +2,9 @@
 import React from 'react'
 import Image from 'next/image'
 import bg from '@/assets/bgImg3.jpg'
-import location from '@/assets/Location1.jpg'
+import location from '@/assets/shop.JPG'
 import CopyrightIcon from '@mui/icons-material/Copyright';
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 
 const Home = () => {
   return (
@@ -23,9 +24,9 @@ const Home = () => {
       <section className='about' id='about' >
 
         <div className='AboutUs-image'>
-          
 
-        <Image className='location' src={location} alt='shop' />
+
+          <Image className='location' src={location} alt='shop' />
 
           <div className='About-Us'>
 
@@ -52,16 +53,34 @@ const Home = () => {
 
         <div className='about-video'>
           <video autoPlay muted loop >
-            <source src="/CrotonAutoRepair1.mp4" type="video/mp4" />
+            <source src="/CrotonAutoRepair2.mp4" type="video/mp4" />
           </video>
-          
+
         </div>
 
+        <div className='facebook-icon'>
+
+          <h1>SOCIAL</h1>
+          <a
+            className="fb-Logo-home"
+            target="_blank"
+            href="https://www.facebook.com/Crotonautorepair"
+          >
+
+            <FacebookOutlinedIcon
+              className='fb-icon-home' />
+          
+          </a>
+
+
+        </div>
+
+
         <div className='copyright'>
-         <CopyrightIcon className='copyRight-Icon'/><h1> 2023 Croton Auto Repair. Made By </h1>
+          <CopyrightIcon className='copyRight-Icon' /><h1> 2023 Croton Auto Repair. Made By </h1>
           <a target="_blank" href='https://www.josselineguardado.com'><h1>JG</h1></a></div>
-      </section>
-    </div>
+      </section >
+    </div >
   )
 }
 

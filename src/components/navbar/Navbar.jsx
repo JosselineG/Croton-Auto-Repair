@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import Image from 'next/image'
-import logo from '@/assets/Logo2.1.png'
+import logo from '@/assets/Logo3.1.png'
 import Link from 'next/link'
 import MenuIcon from '@mui/icons-material/Menu';
 import Button from '@mui/material/Button';
