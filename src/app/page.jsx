@@ -5,14 +5,24 @@ import bg from '@/assets/bgImg3.jpg'
 import location from '@/assets/shop.JPG'
 import CopyrightIcon from '@mui/icons-material/Copyright';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
-
+import ReactPlayer from 'react-player/lazy'
+import { useEffect, useState } from 'react'
 
 const Home = () => {
+  const [showPlayer, setShowPlayer] = useState(false);
+  /* By using one of these methods, you prevent the react-player 
+  component from being rendered on the server side and ensure it's only 
+  initialized on the client side, thereby avoiding the hydration mismatch error. */
+
+  useEffect(() => {
+    setShowPlayer(true);
+  }, []);
+
   return (
     <div id='Home' className='Home'>
       <section className='MainContent'>
 
-        <Image className='bgImg' src={bg} alt='background Image' />
+        <Image className='bgImg' src={bg} alt='background Image' priority={true} />
 
         <div className='CompanyName'>
           <h1>CROTON AUTO REPAIR</h1>
@@ -53,11 +63,11 @@ const Home = () => {
 
 
         <div className='about-video'> 
-             <video autoPlay muted loop >
+       {/*  <video autoPlay muted loop >
             <source src="/CrotonAutoRepair2.1.mp4" type="video/mp4" />
-          </video> 
+          </video>   */}
+         {showPlayer && <ReactPlayer width='100%' height='100%' className='video' url='https://www.facebook.com/watch/?v=3119293664851644' />}
 
-     
         </div> 
 
         <div className='facebook-icon'>
