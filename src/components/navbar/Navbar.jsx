@@ -6,6 +6,7 @@ import logo from '@/assets/Logo3.1.png'
 import Link from 'next/link'
 import MenuIcon from '@mui/icons-material/Menu';
 import Button from '@mui/material/Button';
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 
 const Navbar = () => {
 
@@ -43,12 +44,12 @@ const Navbar = () => {
                 </div>
 
                 <div className='dropDownBar'>
-                    
-                        <Link href='/'>
-                            <Image className='dropDown-Logo' src={logo} alt='logo' />
-                        </Link>
 
-             
+                    <Link href='/'>
+                        <Image className='dropDown-Logo' src={logo} alt='logo' />
+                    </Link>
+
+
 
                     <div className='Menu'>
 
@@ -83,6 +84,18 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <Link className='links' href='/contact'>Contact</Link>
+                            </li>
+                            <li>
+                                <a
+                                    className="fb-Logo-nav"
+                                    target="_blank"
+                                    href="https://www.facebook.com/Crotonautorepair"
+                                >
+
+                                    <FacebookOutlinedIcon
+                                        className='fb-icon-nav' />
+
+                                </a>
                             </li>
                         </ul>) : null}
                 </div>
