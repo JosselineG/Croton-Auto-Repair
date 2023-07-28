@@ -53,7 +53,7 @@ const Home = () => {
 
         <div className='about-video'>
           <video autoPlay muted loop >
-            <source src="/CrotonAutoRepair2.mp4" type="video/mp4" />
+            <source src="/CrotonAutoRepair3.mp4" type="video/mp4" />
           </video>
 
         </div>
