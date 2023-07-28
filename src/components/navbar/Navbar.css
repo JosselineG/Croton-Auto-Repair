@@ -82,14 +82,14 @@ html {
 @media all and (max-width:921px) {
 
   .navBar {
-    height: 20vw;
+    height: 17vw;
    
   }
 
 
   .dropDown-Logo {
     top: 0;
-    width: 20vw;
+    width: 17vw;
   }
 
   .full-width-display {

@@ -6,6 +6,7 @@ import location from '@/assets/shop.JPG'
 import CopyrightIcon from '@mui/icons-material/Copyright';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 
+
 const Home = () => {
   return (
     <div id='Home' className='Home'>
@@ -51,12 +52,13 @@ const Home = () => {
         </div>
 
 
-        <div className='about-video'>
-          <video autoPlay muted loop >
-            <source src="/CrotonAutoRepair3.mp4" type="video/mp4" />
-          </video>
+        <div className='about-video'> 
+             <video autoPlay muted loop >
+            <source src="/CrotonAutoRepair2.1.mp4" type="video/mp4" />
+          </video> 
 
-        </div>
+     
+        </div> 
 
         <div className='facebook-icon'>
 
@@ -69,7 +71,7 @@ const Home = () => {
 
             <FacebookOutlinedIcon
               className='fb-icon-home' />
-          
+
           </a>
 
 
