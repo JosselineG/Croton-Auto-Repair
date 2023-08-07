@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 
- body {
-  background: black;
-} 
+body {
+  background: rgb(0, 0, 0);
+}
 
 .Home {
   width: 100%;
@@ -14,14 +14,19 @@
 
 }
 
+
 .MainContent {
   display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  height: fit-content;
+
+
+  width: 100%;
+  height: 80vh;
+  background-color: black;
+
+
 
 }
 
@@ -37,62 +42,57 @@
 
 }
 
-.CompanyName {
+.logo-tel {
 
-  position: absolute;
+  width: fit-content;
+  height: fit-content;
+
+
+}
+
+.company-name {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.tel-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: flex-end;
 
+
+  color: white;
   width: 100%;
 
-
-  padding: 0 30px 0 0;
-  z-index: 2;
-
-  font-size: 6.5vw;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: bolder;
-  font-style: oblique;
-
-
+  font-size: 3vw;
 }
 
-.CompanyName h1 {
-  text-shadow: -1px -1px 5px rgb(255, 255, 255);
-  color: white;
-  text-align: left;
-
+.tel-div a {
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.CompanyName h2 {
-  background: linear-gradient(0deg,rgb(28, 227, 180),rgb(0, 143, 244));
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: left;
-
+.phone-icon{
+  font-size: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fdfdfd;
 }
-
 
 /* ------------------About-------------*/
 
 .about {
   width: 100%;
   height: fit-content;
-
-
-  background: linear-gradient(0deg, rgb(0, 143, 244) 50%,rgb(28, 227, 180));
-
-
-}
-
-.video-about {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-
+  background: linear-gradient(0deg,rgb(0, 0, 0) 50%,rgb(86, 86, 86) ); 
 
 }
 
@@ -110,15 +110,18 @@
 }
 
 .About-Us h1 {
-  text-shadow: -1px -1px 5px rgb(255, 255, 255);
-  color: white;
+  /* text-shadow: -1px -1px 5px rgb(42, 141, 168); */
+  color: rgb(255, 255, 255);
   font-size: 3vw;
 
 
+  font-family: sans-serif;
+  font-style: oblique;
+  font-weight: 600;
 }
 
 .About-Us h3 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 1.5vw;
   font-family: sans-serif;
   font-style: oblique;
@@ -126,7 +129,7 @@
 }
 
 .About-Us h2 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 1.5vw;
   font-family: sans-serif;
   font-style: oblique;
@@ -136,26 +139,6 @@
 .about-video {
   width: 100%;
 
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-
-
-
-.copyright {
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
- 
-  background-color: rgb(0, 0, 0,0.1);
-}
-
-.copyright h1{
-  font-size: 1vw;
 }
 
 .location {
@@ -166,30 +149,24 @@
 .AboutUs-image {
   display: flex;
   flex-direction: row;
-  height:90vh;
-  background-color: rgb(0, 0, 0,0.2);
-
+  height: 90vh;
 }
 
-.copyRight-Icon{
-  font-size: 1vw;
-}
+/* -------------------fb-section---------------- */
 
-.facebook-icon{
-  background-color: rgb(0, 0, 0,0.2);
+.fb-section {
+
+  color: rgb(255, 255, 255);
 
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   height: 25vh;
-
-
 }
 
-.facebook-icon h1{
+.fb-section h1 {
   font-size: 2.5vw;
-  color: white;
 
   font-family: sans-serif;
   font-style: oblique;
@@ -202,8 +179,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff ;
+  color: #0165E1;
 }
+
+
+/* -------------------copyright-section----------- */
+.copyRight-section {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  
+  color: white;
+}
+
+.copyRight-section h1 {
+  font-size: 1vw;
+}
+
+.copyRight-Icon {
+  font-size: 1vw;
+}
+
 
 
 @media all and (max-width:912px) {
@@ -213,24 +212,8 @@
     height: fit-content;
 
   }
-
-  .CompanyName {
-
-    width: 100%;
-    height: 26vh;
-
-    font-size: 8vw;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-
-  }
-
   .MainContent {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-
+    height: 30vh;
   }
 
   .about {
@@ -238,21 +221,13 @@
     height: fit-content;
     flex-direction: column;
 
-
-  }
-
-  .copyright {
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
   }
 
   .about video {
     width: 100%;
   }
-  .about-video{
+
+  .about-video {
     justify-content: center;
     align-items: center;
 
@@ -266,13 +241,12 @@
     align-items: center;
     height: fit-content;
 
-    background-color: rgb(0, 0, 0, 0.4);
   }
 
   .location {
     width: 80%;
-   border-radius: 15px;
-   padding: 10px;
+    border-radius: 15px;
+    padding: 10px;
   }
 
   .About-Us {
@@ -281,39 +255,44 @@
 
   }
 
-  .About-Us h1{
+  .About-Us h1 {
     font-size: 5vw;
   }
 
-  .About-Us h2{
-    font-size: 4vw;
-  }
-  
-  .About-Us h3{
+  .About-Us h2 {
     font-size: 4vw;
   }
 
-  .copyright h1{
+  .About-Us h3 {
+    font-size: 4vw;
+  }
+
+  .copyRight-section h1 {
     font-size: 3vw;
   }
 
-  .copyRight-Icon{
+  .copyRight-Icon {
     font-size: 3vw;
   }
-  .facebook-icon{
-   
+
+  .fb-section {
+
     height: 15vh;
-  
-  
+
   }
-  .facebook-icon h1{
+
+  .fb-section h1 {
     font-size: 5vw;
 
   }
-  
+
   .fb-icon-home {
     font-size: 8vw;
- 
+
   }
-  
+
+  .Logobg{
+    width: fit-content;
+  }
+
 }

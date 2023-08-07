@@ -1,12 +1,15 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import bg from '@/assets/bgImg3.jpg'
+import bg from '@/assets/sample2.jpg'
+import PhoneIcon from '@mui/icons-material/Phone';
 import location from '@/assets/shop.JPG'
 import CopyrightIcon from '@mui/icons-material/Copyright';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import ReactPlayer from 'react-player/lazy'
 import { useEffect, useState } from 'react'
+import logobg from '@/assets/Logo2.1.png'
+import CompName from '@/assets/headerLogo1.3.4.png'
 
 const Home = () => {
   const [showPlayer, setShowPlayer] = useState(false);
@@ -22,13 +25,22 @@ const Home = () => {
     <div id='Home' className='Home'>
       <section className='MainContent'>
 
-        <Image className='bgImg' src={bg} alt='background Image' priority={true} />
 
-        <div className='CompanyName'>
-          <h1>CROTON AUTO REPAIR</h1>
-          <h2>AND TOWING </h2>
-          <h2>SERVICE</h2>
+        <div className='company-name'>
+          <Image className='compName' src={CompName} alt='background Image' priority={true} />
+
+
         </div>
+
+        <Image className='Logobg' src={logobg} alt='logo' />
+        <div className='tel-div'>
+          <a className='tel' href='tel:914-862-2376' >
+
+            <PhoneIcon className='phone-icon' /> 914-862-2376
+
+          </a>
+        </div>
+
 
       </section>
 
@@ -37,7 +49,7 @@ const Home = () => {
         <div className='AboutUs-image'>
 
 
-          <Image className='location' src={location} alt='shop' />
+          <Image className='location' src={location} alt='shop' priority={true} />
 
           <div className='About-Us'>
 
@@ -62,36 +74,33 @@ const Home = () => {
         </div>
 
 
-        <div className='about-video'> 
-       {/*  <video autoPlay muted loop >
-            <source src="/CrotonAutoRepair2.1.mp4" type="video/mp4" />
-          </video>   */}
-         {showPlayer && <ReactPlayer width='100%' height='100%' className='video' url='https://www.facebook.com/watch/?v=3119293664851644' />}
+        <div className='about-video'>
 
-        </div> 
-
-        <div className='facebook-icon'>
-
-          <h1>SOCIAL</h1>
-          <a
-            className="fb-Logo-home"
-            target="_blank"
-            href="https://www.facebook.com/Crotonautorepair"
-          >
-
-            <FacebookOutlinedIcon
-              className='fb-icon-home' />
-
-          </a>
-
+          {showPlayer && <ReactPlayer width='100%' height='100%' className='video' url='https://www.facebook.com/watch/?v=3119293664851644' priority={true} />}
 
         </div>
+   
 
+      <section className='fb-section'>
 
-        <div className='copyright'>
-          <CopyrightIcon className='copyRight-Icon' /><h1> 2023 Croton Auto Repair. Made By </h1>
-          <a target="_blank" href='https://www.josselineguardado.com'><h1>JG</h1></a></div>
+        <h1>SOCIAL</h1>
+
+        <a className="fb-Logo-home" target="_blank" href="https://www.facebook.com/Crotonautorepair">
+
+          <FacebookOutlinedIcon
+            className='fb-icon-home' />
+
+        </a>
+
+      </section>
+
+      <section className='copyRight-section'>
+
+        <CopyrightIcon className='copyRight-Icon' /><h1> 2023 Croton Auto Repair. Made By </h1>
+        <a target="_blank" href='https://www.josselineguardado.com'><h1>JG</h1></a>
+
       </section >
+      </section>
     </div >
   )
 }

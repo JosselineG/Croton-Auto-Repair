@@ -26,11 +26,11 @@ const Services = () => {
 
           <div className='List'>
             <h1> OUR SERVICES</h1>
-           
-              <h2>Complete Auto Repair shop, we specialize
-               in domestic and imported vehicles.
-              </h2>
-           
+
+            <h2>Complete Auto Repair shop, we specialize
+              in domestic and imported vehicles.
+            </h2>
+
             <span>
 
               <li>Towing Services</li>
@@ -47,9 +47,9 @@ const Services = () => {
           </div>
 
           <div className='images'>
-            <Image className='AImg' src={AImg} alt='Tow Service' />
-            <Image className='BImg' src={BImg} alt='Car Lift' />
-            <Image className='CImg' src={CImg} alt='Car' />
+            <Image className='AImg' src={AImg} alt='Tow Service' priority={true} />
+            <Image className='BImg' src={BImg} alt='Car Lift' priority={true} />
+            <Image className='CImg' src={CImg} alt='Car' priority={true} />
 
           </div>
 

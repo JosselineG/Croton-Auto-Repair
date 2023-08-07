@@ -34,9 +34,10 @@ const Navbar = () => {
                 <div className='full-width-display'>
 
 
+               {/*  <Image className='Logo' src={logo} alt='logo' /> */}
                     <Link className='links' href='/'>Home</Link>
                     <Link className='links' href='/#about' scroll={false}>About</Link>
-                    <Image className='Logo' src={logo} alt='logo' />
+              
                     <Link className='links' href="/services" >Services</Link>
                     <Link className='links' href='/contact'>Contact</Link>
 
