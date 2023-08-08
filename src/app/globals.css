@@ -50,40 +50,34 @@ body {
 
 }
 
-.company-name {
+
+
+.tel-div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
+  width: 100%;
+  padding: 0 10px;
 }
 
-.tel-div {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
-
-
+.tel-div h1 {
+  font-size: 2vw;
   color: white;
-  width: 100%;
-
-  font-size: 3vw;
 }
 
 .tel-div a {
-  width: 25%;
+
+  gap: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
-.phone-icon{
-  font-size: 3vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.email-tel-icon {
+  font-size: 2vw;
   color: #fdfdfd;
 }
 
@@ -92,7 +86,7 @@ body {
 .about {
   width: 100%;
   height: fit-content;
-  background: linear-gradient(0deg,rgb(0, 0, 0) 50%,rgb(86, 86, 86) ); 
+  background: linear-gradient(0deg, rgb(0, 0, 0) 50%, rgb(86, 86, 86));
 
 }
 
@@ -191,7 +185,7 @@ body {
   align-items: center;
   gap: 5px;
 
-  
+
   color: white;
 }
 
@@ -212,6 +206,7 @@ body {
     height: fit-content;
 
   }
+
   .MainContent {
     height: 30vh;
   }
@@ -291,8 +286,18 @@ body {
 
   }
 
-  .Logobg{
+  .Logobg {
     width: fit-content;
   }
 
+
+  .tel-div h1 {
+    font-size: 3vw;
+
+  }
+
+  .email-tel-icon {
+    font-size: 3vw;
+
+  }
 }

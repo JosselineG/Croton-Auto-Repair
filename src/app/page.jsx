@@ -10,6 +10,7 @@ import ReactPlayer from 'react-player/lazy'
 import { useEffect, useState } from 'react'
 import logobg from '@/assets/Logo2.1.png'
 import CompName from '@/assets/headerLogo1.3.4.png'
+import EmailIcon from '@mui/icons-material/Email';
 
 const Home = () => {
   const [showPlayer, setShowPlayer] = useState(false);
@@ -25,22 +26,35 @@ const Home = () => {
     <div id='Home' className='Home'>
       <section className='MainContent'>
 
-
-        <div className='company-name'>
+        <div className='shop-name'>
           <Image className='compName' src={CompName} alt='background Image' priority={true} />
-
-
         </div>
 
-        <Image className='Logobg' src={logobg} alt='logo' />
+        <div className='img-logo'>
+          <Image className='Logobg' src={logobg} alt='logo' />
+        </div>
+
         <div className='tel-div'>
-          <a className='tel' href='tel:914-862-2376' >
 
-            <PhoneIcon className='phone-icon' /> 914-862-2376
+          <div className='email'>
+            <a href="mailto:crotonautorepair@gmail.com" >
 
-          </a>
+              <EmailIcon className='email-tel-icon' />
+              <h1> crotonautorepair@gmail.com</h1>
+
+            </a>
+          </div>
+
+          <div className='tel'>
+            <a href='tel:914-862-2376' >
+
+              <PhoneIcon className='email-tel-icon' />
+              <h1> 914-862-2376 </h1>
+
+            </a>
+          </div>
+
         </div>
-
 
       </section>
 
@@ -79,27 +93,27 @@ const Home = () => {
           {showPlayer && <ReactPlayer width='100%' height='100%' className='video' url='https://www.facebook.com/watch/?v=3119293664851644' priority={true} />}
 
         </div>
-   
 
-      <section className='fb-section'>
 
-        <h1>SOCIAL</h1>
+        <section className='fb-section'>
 
-        <a className="fb-Logo-home" target="_blank" href="https://www.facebook.com/Crotonautorepair">
+          <h1>SOCIAL</h1>
 
-          <FacebookOutlinedIcon
-            className='fb-icon-home' />
+          <a className="fb-Logo-home" target="_blank" href="https://www.facebook.com/Crotonautorepair">
 
-        </a>
+            <FacebookOutlinedIcon
+              className='fb-icon-home' />
 
-      </section>
+          </a>
 
-      <section className='copyRight-section'>
+        </section>
 
-        <CopyrightIcon className='copyRight-Icon' /><h1> 2023 Croton Auto Repair. Made By </h1>
-        <a target="_blank" href='https://www.josselineguardado.com'><h1>JG</h1></a>
+        <section className='copyRight-section'>
 
-      </section >
+          <CopyrightIcon className='copyRight-Icon' /><h1> 2023 Croton Auto Repair. Made By </h1>
+          <a target="_blank" href='https://www.josselineguardado.com'><h1>JG</h1></a>
+
+        </section >
       </section>
     </div >
   )
